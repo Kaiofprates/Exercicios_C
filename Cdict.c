@@ -66,7 +66,7 @@ printf(blue"\n\n                          `. ___\n                        __,' _
 		printf(cyan"\n\t03:"cls);printf(white"[./cdict -r name]for read key.");
 		printf(cyan"\n\t04:"cls);printf(white"[./cdict -a name]for append values in key.");
 		printf(cyan"\n\t05:"cls);printf(white"[./cdict -w name i j values]\n\t"cls);printf(yel"*note: [i/j] reference of matrix index.\n"cls);
-		printf(cyan"\n\t06:"cls);printf(white"[./cdict --h name]for this window.");
+		printf(cyan"\n\t06:"cls);printf(white"[./cdict --h ]for this window.");
 		printf(cyan "\n\t________________________________________________________________________" cls);
 		printf(gren"\n\t\t\t\t\t\t https://github.com/Kaiofprates " cls);
 		printf(cyan"\n\t__________________________dev_Kaio_F_prates__5-18_______________________\n\n" cls);
