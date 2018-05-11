@@ -43,25 +43,23 @@ int main(int argc, char const *argv[])
 	}
 }
 
-void add(){
-int y = atoi(argv[3]);
-/*int b = atoi(argv[4]);*/
-strcat(argv[2],".k");PA = fopen(argv[2],"ab+");fseek(PA,0,SEEK_END);
-for(int i = 5; i < y+5; i++){
-	int w = strlen(argv[i]);
-	char aux[w];
-	strcpy(aux,argv[i]);
-	strcat(aux,"|");
-	fwrite(&aux,sizeof(aux)+2,1,PA);
+ void add(){
+ int y = atoi(argv[3]);
+ /*int b = atoi(argv[4]);*/
+ strcat(argv[2],".k");PA = fopen(argv[2],"ab+");fseek(PA,0,SEEK_END);
+ for(int i = 5; i < y+5; i++){
+	 int w = strlen(argv[i]);
+	 char aux[w];
+	 strcpy(aux,argv[i]);
+	 strcat(aux,"|");
+	 fwrite(&aux,sizeof(aux)+2,1,PA);
 	/*printf("\n\t%s",argv[i]);*/
 }
 }
-printf(blue"\n\n                          `. ___\n                        __,' __`.                _..----....____\n            __...--.'``;.   ,.   ;``--..__     .'    ,-._    _.-'\n      _..-''-------'   `'   `'   `'     O ``-''._   (,;') _,'\n    ,'________________                          \\`-._`-','\n     `._              ```````````------...___   '-.._'-:\n        ```--.._      ,.                     ````--...__\\-.\n                `.--. `-`     Cdict by Kailp    ____    |  |`\n                  `. `.                       ,'`````.  ;  ;`\n                    `._`.        __________   `.      \\'__/`\n                       `-:._____/______/___/____`.     \\  `\n                                   |       `._    `.    \\\n                                   `._________`-.   `.   `.___\n                                                     `------'\n");
-
-
-	void help(){printf(magenta "\n\t:________________________________:Cdict:________________________________:\n" cls);
-	printf(cyan "\n\tSumary: " cls);printf(cyan"\n\t01:"cls);printf(white"[./cdict -c name]for create key."cls);
-
+  	void help(){
+		printf(blue"\n\n                          `. ___\n                        __,' __`.                _..----....____\n            __...--.'``;.   ,.   ;``--..__     .'    ,-._    _.-'\n      _..-''-------'   `'   `'   `'     O ``-''._   (,;') _,'\n    ,'________________                          \\`-._`-','\n     `._              ```````````------...___   '-.._'-:\n        ```--.._      ,.                     ````--...__\\-.\n                `.--. `-`     Cdict by Kailp    ____    |  |`\n                  `. `.                       ,'`````.  ;  ;`\n                    `._`.        __________   `.      \\'__/`\n                       `-:._____/______/___/____`.     \\  `\n                                   |       `._    `.    \\\n                                   `._________`-.   `.   `.___\n                                                     `------'\n");
+		printf(magenta "\n\t:________________________________:Cdict:________________________________:\n" cls);
+	  printf(cyan "\n\tSumary: " cls);printf(cyan"\n\t01:"cls);printf(white"[./cdict -c name]for create key."cls);
 	  printf(cyan"\n\t02:"cls);printf(white"[./cdict -d name]for delete key."cls);
 		printf(cyan"\n\t03:"cls);printf(white"[./cdict -r name]for read key.");
 		printf(cyan"\n\t04:"cls);printf(white"[./cdict -a name]for append values in key.");
